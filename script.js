@@ -17,9 +17,9 @@ const nextSong = () => {
         const div = document.createElement("div")
         div.classList.add("emoji-container")
         const img = document.createElement("img")
-        img.src = `/src/${question[questionIndex]}.jpg`
-        img.style.width = "40vw"
-        img.style.height = "40vh"
+        img.src = `./src/${question[questionIndex]}.jpg`
+        img.style.width = "80vw"
+        img.style.height = "50vh"
         const input = document.createElement("input")
         input.setAttribute("type", "text")
         input.setAttribute("placeholder", "Enter song name here...")
@@ -60,7 +60,7 @@ const playSong = () => {
         score += 10
     questionIndex++
     const video = document.createElement("video")
-    video.src = `/src/${question[songIndex++]}.mp4`
+    video.src = `./src/${question[songIndex++]}.mp4`
     video.setAttribute("controls", "true")
     video.setAttribute("autoplay", "true")
     container.replaceChild(video, container.childNodes[1])
