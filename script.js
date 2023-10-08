@@ -63,8 +63,6 @@ const playSong = () => {
     video.src = `src/${question[songIndex++]}.mp4`
     video.setAttribute("controls", "true")
     video.setAttribute("autoplay", "true")
-    video.setAttribute("width", "60vw")
-    video.setAttribute("height", "30vh")
     container.replaceChild(video, container.childNodes[1])
     next.style.zIndex = 12
 }
